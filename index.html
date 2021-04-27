@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js" defer></script>
+    <title>CRUD: Cuisine Record of Unique Devours</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    
+    <div class="title">
+        <h1>CRUD</h1>
+        <p>Cuisine Record of Unique Devours</p>
+    </div>
+    <div class="form">
+        <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+            <input type="text" id="add-todo" placeholder="Food">
+            <input type="submit" value="Add" class="submitButton">
+        </form>
+        <p>You've devoured:</p>
+        <p id="counter"></p>
+        <table>
+            <tr class="to-do">
+                <th><h3>Devoured:</h3></th>
+            </tr>
+            <tbody id="dishes">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div id="edit-box" role="aria-hidden" >
+        <form action="javascript:void(0);" method="POST" id="save-edit">
+            <input type="text" id="edit-todo">
+            <input type="submit" value="save" class="saveButton">
+            <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
