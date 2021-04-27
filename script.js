@@ -28,6 +28,11 @@ var app = new function() {
         // Get the value
         var dish = el.value;
 
+        if(dish.indexOf("English") > -1 || dish.indexOf("english") > -1 || dish.indexOf("ENGLISH") > -1 || dish.indexOf("British") > -1 || dish.indexOf("BRITISH") > -1 || dish.indexOf("british") > -1) {
+            alert("Oi 'ello gobnah, we refuse to add such grub to this lis'. ");
+            return;
+        }
+
         if(dish){
             // Add the new value
             this.dishes.push(dish.trim());
