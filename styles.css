@@ -1,9 +1,15 @@
 .title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     margin-top: 25px;
 }
 
+body {
+    background-color: #f5f5f5;
+}
+
 .form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: auto;
     max-width: 80%;
     text-align: center;
@@ -21,11 +27,91 @@ input[type='submit'], button, [aria-label] {
 }
 
 td {
-    background-color: rgb(94, 196, 196);
-    padding-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: #FFFF00;
+    padding: 10px 10px;
     text-align: left;
+    font-size: 16px;
 }
 
 .to-do {
     background: transparent;
+    font-size: 16px;
+}
+
+.editButton {
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #db8f00;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.editButton:active {
+    background-color: #FF8C00;
+    box-shadow: 0 5px #667;
+    transform: translateY(4px);
+}
+
+.editButton:hover {background-color: #FF8C00}
+
+.deleteButton {
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #DC143C;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.deleteButton:active {
+    background-color: #b22222;
+    box-shadow: 0 5px #667;
+    transform: translateY(4px);
+}
+
+.deleteButton:hover {background-color: #b22222}
+
+.saveButton {
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.saveButton:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #667;
+    transform: translateY(4px);
+}
+
+.saveButton:hover {background-color: #3e8e41}
+
+#edit-todo {
+    font-size: 20px;
 }
